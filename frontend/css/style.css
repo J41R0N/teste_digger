@@ -135,24 +135,26 @@ main{
 
 
 .flavor_text {
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: space-between;
+    min-height: 700px;
+    padding: 40px;
+    box-sizing: border-box;
 
-    flex: 1 1 320px; 
 
+
+    flex: 1 1 320px;
 
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
      
 }
 
 .Credito_a_liga {
     font-size: 15px;
+    
 }
 
 .logo_unialfa img {
-
     width: 50px ;
     border-radius: 8px;
     margin-right: 15px;
@@ -161,6 +163,9 @@ main{
 
 
 .logo_unialfa {
+    
+
+
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -169,21 +174,51 @@ main{
 
 
 
+.ft_topo {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* como no seu layout atual. Use flex-start para alinhar à esquerda */
+    gap: 10px;
+}
+
+.ft_base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
 
 /*BOTÕES DO FLAVOR TEXT*/
 
 
 .ft_button{
-    background-color: #ffff;
+    background-color: #2B2233;
     border: none;
     border-radius: 10px;
     padding: 20px;
     width: 200px;
-    font-size: 15px;
+    font-size: 20px;
+    transition: background-color 0.2s ease-in-out;
+    color:#2BB5A0;
+    margin: 5px;
 
 } 
+
+.ft_button:hover {
+    background-color: #2BB5A0;
+    color: #2B2233;
+    
+
+
+
+}
+
+
+
 #f_t_1{
-    color:#216B57;
+    
 
 }
 
